@@ -1,3 +1,3 @@
 # Wall Of Posts
 
-A wall to create and display posts
+A wall of posts to create and show posts
