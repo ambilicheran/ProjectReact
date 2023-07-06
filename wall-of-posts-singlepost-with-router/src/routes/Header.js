@@ -1,5 +1,6 @@
 import { MdChat, MdPostAdd } from "react-icons/md";
 import classes from "./Header.module.css";
+import { Link } from "react-router-dom";
 
 function Header(props) {
   return (
@@ -7,9 +8,9 @@ function Header(props) {
       <h1 className={classes.logo}>
         <MdChat /> Wall Of Posts
       </h1>
-      <button onClick={props.newPost}>
+      <Link to="/create-post" className={classes.new_post_button}>
         <MdPostAdd size={28} /> New Post
-      </button>
+      </Link>
     </header>
   );
 }

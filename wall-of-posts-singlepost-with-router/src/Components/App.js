@@ -1,7 +1,6 @@
-import NewPost from "./Components/NewPost";
-import Post from "./Components/Post";
-import Modal from "./Components/Modal";
-import Header from "./Components/Header";
+import NewPost from "../routes/NewPost";
+import Post from "./Post";
+import Modal from "./Modal";
 import { useState } from "react";
 import classes from "./App.module.css";
 
@@ -10,9 +9,7 @@ function App() {
   const [enteredText, setEnteredText] = useState();
   const [enteredAuthor, setEnteredAuthor] = useState();
   const [enteredPostData, setEnteredPostData] = useState([]);
-  function newPostHandler() {
-    setShow(true);
-  }
+
   function cancelHandler() {
     setShow(false);
     setEnteredText("");
@@ -38,22 +35,15 @@ function App() {
 
   return (
     <div>
-      <Header newPost={newPostHandler} />
       {/*      <Post body={"is lovely!"} author="Ambili" onCancel={cancelHandler} />  */}
       <div className={classes.postgrid}>
         {enteredPostData.map((post) => (
-          <Post
-            key={post.body}
-            body={post.body}
-            author={post.author}
-            onCancel={cancelHandler}
-          />
+          <Post key={post.body} body={post.body} author={post.author} />
         ))}
       </div>
-      <Modal onCancel={cancelHandler} visible={show}>
+      <Modal visible={show}>
         {show && (
           <NewPost
-            onCancel={cancelHandler}
             onSubmit={submitHandler}
             onAddText={textAddHandler}
             onAddAuthor={authorAddHandler}

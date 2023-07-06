@@ -1,12 +1,10 @@
 import classes from "./Modal.module.css";
+import { Link } from "react-router-dom";
 
 function Modal(props) {
   return (
     <div>
-      <div
-        onClick={props.onCancel}
-        className={props.visible ? classes.backdrop : ""}
-      ></div>
+      <Link to=".." className={classes.backdrop}></Link>
       <dialog open className={classes.modal}>
         {props.children}
       </dialog>

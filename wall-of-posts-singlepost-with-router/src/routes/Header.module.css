@@ -16,7 +16,7 @@ header {
   color: rgb(137, 240, 240);
 }
 
-button {
+.new_post_button {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -28,8 +28,9 @@ button {
   font-weight: bold;
   text-decoration: none;
   font-size: 15px;
+  background-color: whitesmoke;
 }
 
-button:hover {
+.new_post_button:hover {
   background-color: aquamarine;
 }
