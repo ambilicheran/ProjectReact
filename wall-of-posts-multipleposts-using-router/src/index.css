@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  min-height: 100vh;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  background-image: radial-gradient(
+    ellipse at top left,
+    rgb(13, 34, 34),
+    rgb(10, 122, 122)
+  );
+  padding: 0 15%;
+}
