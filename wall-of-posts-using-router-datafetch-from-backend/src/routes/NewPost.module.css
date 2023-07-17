@@ -1,0 +1,59 @@
+.form {
+  background-color: darkcyan;
+  padding: 1rem 2rem;
+  width: 25rem;
+  border-radius: 15px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 0.05rem;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+  font: inherit;
+  padding: 0.5rem;
+  border: none;
+  border-color: rgb(9, 41, 43);
+  color: black;
+  font-size: 18px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.actions button {
+  cursor: pointer;
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(11, 45, 49);
+  color: white;
+  margin-top: 1rem;
+}
+
+.linkbutton {
+  cursor: pointer;
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(11, 45, 49);
+  color: white;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.actions button:hover {
+  background-color: rgb(27, 85, 81);
+}
